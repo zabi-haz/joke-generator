@@ -1,0 +1,62 @@
+*
+    padding: 0
+    margin: 0
+    box-sizing: border-box
+    text-decoration: none
+.App
+    height: 100vh
+    width: 100%
+    background: #381e80
+    display: flex
+    align-items: center
+    justify-content: center
+    flex-direction: column
+    .h2
+        margin-bottom: 20px
+        font-family: sans-serif
+        color: #fff
+    .main_ask
+        height: 400px
+        min-width: 600px
+        background: #fff
+        border-radius: 15px
+        display: flex
+        align-items: center
+        justify-content: space-between
+        flex-direction: column
+        padding: 40px
+        h2
+            font-size: 1rem
+            color: #381e80
+            font-family: sans-serif
+        button
+            padding: 12px 25px
+            background: none
+            border: 2px solid #381e80
+            border-radius: 10px
+            transition: all .5s
+            &:hover
+                background: #381e80
+                color: #fff
+                transition: all .5s
+        .linkHome
+            font-family: sans-serif
+            margin-top: 100px
+            color: #fff
+            background: #381e80
+            padding: 12px 20px
+            border-radius: 15px
+            transition: all .5s
+            &:hover
+                transform: scale(1.2)
+                transition: all .5s
+        .se
+            width: 200px
+            background: none
+            border: 2px solid #381e80
+            padding: 12px 5px
+            border-radius: 15px
+@media screen and ( max-width: 532px )
+    .App
+        .main_ask
+            min-width: 80%
